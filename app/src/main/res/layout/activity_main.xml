@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><!DOCTYPE LinearLayout [<!ELEMENT LinearLayout (LinearLayout|ImageView|TextView|FrameLayout|EditText)*><!ATTLIST LinearLayoutandroid:background CDATA #IMPLIEDandroid:gravity CDATA #IMPLIEDandroid:layout_height CDATA #REQUIREDandroid:layout_marginTop CDATA #IMPLIEDandroid:layout_width CDATA #REQUIREDandroid:orientation CDATA #REQUIREDandroid:paddingLeft CDATA #IMPLIEDandroid:paddingRight CDATA #IMPLIEDandroid:paddingTop CDATA #IMPLIEDtools:context CDATA #IMPLIEDxmlns:android CDATA #IMPLIEDxmlns:app CDATA #IMPLIEDxmlns:tools CDATA #IMPLIED><!ELEMENT ImageView (#PCDATA)><!ATTLIST ImageViewandroid:layout_height CDATA #REQUIREDandroid:layout_width CDATA #REQUIREDandroid:src CDATA #REQUIRED><!ELEMENT TextView (#PCDATA)><!ATTLIST TextViewandroid:layout_height CDATA #REQUIREDandroid:layout_marginLeft CDATA #IMPLIEDandroid:layout_weight CDATA #IMPLIEDandroid:layout_width CDATA #REQUIREDandroid:text CDATA #IMPLIEDandroid:textColor CDATA #IMPLIEDandroid:textSize CDATA #IMPLIED><!ELEMENT FrameLayout (EditText|Button)*><!ATTLIST FrameLayoutandroid:layout_width CDATA #REQUIREDandroid:layout_height CDATA #REQUIREDandroid:paddingLeft CDATA #REQUIREDandroid:paddingRight CDATA #REQUIREDandroid:paddingTop CDATA #REQUIREDandroid:paddingBottom CDATA #REQUIREDandroid:background CDATA #REQUIRED><!ELEMENT EditText (#PCDATA)><!ATTLIST EditTextandroid:hint CDATA #REQUIREDandroid:inputType CDATA #IMPLIEDandroid:layout_height CDATA #REQUIREDandroid:layout_width CDATA #REQUIRED><!ELEMENT Button (#PCDATA)><!ATTLIST Buttonandroid:layout_width CDATA #REQUIREDandroid:layout_height CDATA #REQUIREDandroid:layout_gravity CDATA #REQUIREDandroid:text CDATA #REQUIRED>]>
+<?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
@@ -140,6 +140,69 @@
             android:layout_marginTop="5dp"
             android:layout_marginBottom="54dp"/>
 
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFFFFF"
+        android:paddingLeft="26dp"
+        android:paddingRight="26dp"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="36dp"
+            android:gravity="center_vertical">
+
+            <ImageView
+                android:layout_width="5dp"
+                android:layout_height="5dp"
+                android:src="@drawable/rectangle"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="근무가능 시간"
+                android:textSize="17sp"
+                android:layout_marginLeft="7dp"
+                android:textColor="#000000"/>
+
+        </LinearLayout>
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="27dp"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="풀타임"/>
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="47dp"
+                android:text="파트타임(재직중)"/>
+
+        </RadioGroup>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="다음"
+            android:textSize="20sp"
+            android:layout_marginTop="56dp"
+            android:layout_marginBottom="31dp"
+            android:textColor="#000000"/>
 
 
 
