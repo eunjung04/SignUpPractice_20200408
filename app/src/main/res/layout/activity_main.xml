@@ -210,7 +210,7 @@
                         <Button
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:text="다음"
+                            android:text="@string/next"
                             android:textSize="20sp"
                             android:layout_marginTop="56dp"
                             android:layout_marginBottom="31dp"

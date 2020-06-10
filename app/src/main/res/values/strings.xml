@@ -1,3 +1,4 @@
 <resources>
-    <string name="app_name">SignUpPractice_20200408</string>
+    <string name="app_name">회원가입연습</string>
+    <string name="next">다음</string>
 </resources>
