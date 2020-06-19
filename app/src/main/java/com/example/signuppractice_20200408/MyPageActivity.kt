@@ -11,8 +11,9 @@ class MyPageActivity : AppCompatActivity() {
         setContentView(R.layout.activity_my_page)
 
         val name=intent.getStringExtra("userName")
+        val age=intent.getIntExtra("userAge",-1)
 
-        userNameTxt.text=name
+        userNameTxt.text="${name}:${age}세"
     }
 
 }
