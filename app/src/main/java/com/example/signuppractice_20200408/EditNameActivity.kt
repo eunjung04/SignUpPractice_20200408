@@ -14,6 +14,11 @@ class EditNameActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_edit_name)
 
+        inputAddressBtn.setOnClickListener {
+            val myIntent=Intent(this,EditAddressActivity::class.java)
+            startActivityForResult(myIntent, REQ_FOR_ADDRESS)
+        }
+
         okBtn.setOnClickListener {
 
             val inputName=nameEdt.text.toString()
