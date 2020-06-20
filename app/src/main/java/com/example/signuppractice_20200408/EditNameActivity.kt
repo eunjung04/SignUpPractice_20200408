@@ -1,5 +1,6 @@
 package com.example.signuppractice_20200408
 
+import android.app.Activity
 import android.content.Intent
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
@@ -31,4 +32,22 @@ class EditNameActivity : AppCompatActivity() {
             startActivity(myIntent)
         }
     }
+
+    override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
+        super.onActivityResult(requestCode, resultCode, data)
+
+        //요청 종류 확인
+        if(requestCode==REQ_FOR_ADDRESS){
+            //확인을 눌러서 종료된게 맞는지
+            if(resultCode==Activity.RESULT_OK){
+                //첨부된 데이터를 받자.
+
+                val main=data?.getStringExtra("mainAddress")
+                val detail=data?.getStringExtra("detailAddress")
+
+                addressTxt.text="${main}/${detail}"
+            }
+        }
+    }
+
 }
