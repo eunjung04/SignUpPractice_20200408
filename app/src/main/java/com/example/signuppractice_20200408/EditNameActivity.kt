@@ -7,6 +7,9 @@ import kotlinx.android.synthetic.main.activity_edit_name.*
 
 class EditNameActivity : AppCompatActivity() {
 
+    //1000이라는 숫자가, 주소를 얻기위한 요청이라고 메모
+    val REQ_FOR_ADDRESS=1000
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_edit_name)
